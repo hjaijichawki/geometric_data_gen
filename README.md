@@ -10,8 +10,9 @@ Then we try to inject a percentage of generated images in the training set and w
 
 ---------------------
 **Dataset**
+----------------
 You find here the link for the dataset.
-<a href="https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA">
+[Brain Tumor Detection MRI Dataset](https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA)
 
 ---------------------------------
 **Code Structure**
