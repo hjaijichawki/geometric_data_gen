@@ -8,6 +8,11 @@ This repository focuses on exploring different geometric transformations for med
    
 Then we try to inject a percentage of generated images in the training set and we evaluate the model performance
 
+---------------------
+**Dataset**
+You find here the link for the dataset.
+<a href="https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA">
+
 ---------------------------------
 **Code Structure**
 ---------------------------
