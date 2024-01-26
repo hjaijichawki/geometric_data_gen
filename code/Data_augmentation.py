@@ -3,7 +3,14 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
 import cv2
 
-def augment_data(dir_path,save_to_dir,percentage,n_sample_generated):
+
+'''This function generates new images from the originals and saves them in a directory.
+   :param dir_path: the directory path where the original images are stored
+   :param save_to_dir: the directory path where you will save the generated images
+   :param percentage: the percentage of original images used to generate the new ones
+   :param n_sample_generated: number of samples generated from each original image 
+   :return: generated images saved in the save_to_dir directory'''
+def augment_data(dir_path:str,save_to_dir:str,percentage:int,n_sample_generated:int):
   data_gen=ImageDataGenerator(rotation_range=20,
                               rescale=1./255,
                               width_shift_range=.2,
