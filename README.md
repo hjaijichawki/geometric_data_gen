@@ -1,39 +1,37 @@
 *Geometric Transformsations for Medical Image Data Augmentation*
 --------------------------------------
+
 **Introduction**
 ------------------------
-In the realm of ML,the efficacy of models is related to the quantity and quality of the data used for their training,the more diverse and plentiful the data, the better the models generalize. However, in many cases, there is a scarcity of diverse and comprehensive datasets required for effective model training. In this context,data augmentation emerges as a crucial measure to mitigate the impact of data scarcity by artificially increasing the volume of training data through the application of techniques which generate new data.
-This repository focuses on exploring different geometric transformations applied to generate new medical images such as rotation, shear, zoom, horizontal flip, and vertical flip. Two different approaches are employed to train the model with varying degrees of augmentation:
+
+In the realm of Machine Learning,the efficacy of models is related to the quantity and quality of the data used for their training,the more diverse and plentiful the data, the better the models generalize. However, in many cases, there is a scarcity of diverse and comprehensive datasets required for effective model training. In this context,data augmentation emerges as a crucial measure to mitigate the impact of data scarcity by artificially increasing the volume of training data through the application of techniques which generate new data.
+This repository focuses on exploring different geometric transformations applied to generate new medical images such as rotation, shear, zoom, horizontal flip, and vertical flip. Two different approaches are employed to train the model with varying the training dataset:
 1. ***Without Data Augmentation:*** The model is trained on the original, unaltered dataset.
 2. ***With Data Augmentation:*** The model is trained on the dataset with new generated images.
    
 Then we try to inject a percentage of generated images in the training set and we evaluate the model performance
 
----------------------
 **Dataset**
 ----------------
+
 You find here the link for the dataset.
 [Brain Tumor Detection MRI Dataset](https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA)
 
----------------------------------
 **Code Structure**
 ---------------------------
+
 * ***classifier.py:*** Contains the code for the classification model.
 
 * ***Data_augmentation:*** Contains code for generating new images from originals.
 
 * ***data_preparation.py:*** Contains code for data preparation
 
-* ***evalute.py:*** Contains code for model evaluation 
-  
-[Brain Tumor Detection MRI Dataset](https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA)
+* ***evalute.py:*** Contains code for model evaluation
 
-
-
------------------------------ 
 **Running Code**
 -------------------
-* Download dataset by following the instruction below:
+
+* Download dataset by following the instructions below:
 
     download kaggle's beta API
   
@@ -57,20 +55,21 @@ You find here the link for the dataset.
         !mkdir  Augmented_data/YES Augmented_data/NO
         !tree -d 
 
-* Use the function `split_data` in `data_preparation` to split dataset into train/test/val
+* Use the function `split_data` in `data_preparation.py` to split dataset into train/test/val
   
 * Run the code in `classifier.py` to classify original data
 
-* Run the code in `Data_augmentation to generate new images`
+* Run the code in `Data_augmentation.py` to generate new images
   
 * Load x% of original data and 100-x% of new generated data in the TRAIN_model directory
   
 * Change the TRAIN_DIR to TRAIN_model and rund the classifier to test the impact of using new generated data
-
-*Evaluate the model performance each time with the code in `evaluate.py`
+  
+* Evaluate the model performance each time with the code in `evaluate.py`
 
 **Results**
 ---------------------
+
 We mesure in each try the test accurancy and the ROC curve area
 | Number of Epochs       | 10 epochs |            | 20 epochs |            | 30 epochs |            | 40 epochs |            | 50 epochs |          |  
 |------------------------|-----------|------------|-----------|------------|-----------|------------|-----------|------------|-----------|------------|
