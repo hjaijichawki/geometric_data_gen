@@ -1,16 +1,3 @@
-for dataset loadind from kaggle:
-    install kaggle.json 
-    !pip install -q kaggle
-    !mkdir ~/.kaggle
-    !cp kaggle.json ~/.kaggle/
-    !chmod 600 ~/.kaggle/kaggle.json
-    !kaggle datasets download -d abhranta/brain-tumor-detection-mri
-
-working with tree structure:
-    !apt-get install tree
-    !mkdir TRAIN TRAIN_model TEST VAL Augmented_data Brain_Tumor_dataset TRAIN/YES TRAIN/NO TEST/YES TEST/NO VAL/YES VAL/NO Augmented_data/YES Augmented_data/NO
-    !tree -d
-
 numpy
 pandas
 matplotlib
