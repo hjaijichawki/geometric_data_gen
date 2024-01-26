@@ -9,6 +9,12 @@ This repository focuses on exploring different geometric transformations applied
    
 Then we try to inject a percentage of generated images in the training set and we evaluate the model performance
 
+---------------------
+**Dataset**
+----------------
+You find here the link for the dataset.
+[Brain Tumor Detection MRI Dataset](https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA)
+
 ---------------------------------
 **Code Structure**
 ---------------------------
@@ -64,14 +70,13 @@ Then we try to inject a percentage of generated images in the training set and w
 **Results**
 ---------------------
 We mesure in each try the test accurancy and the ROC curve area
-| Number of Epochs       | 10 epochs            |                  | 20 epochs            |                  | 30 epochs            |                  | 40 epochs            |                  | 50 epochs            |                  |  
-|------------------------|----------------------|------------------|----------------------|------------------|----------------------|------------------|----------------------|------------------|----------------------|------------------|
-| Metrics                | Test Acc | ROC Area    | Test Acc | ROC Area | Test Acc | ROC Area    | Test Acc | ROC Area | Test Acc | ROC Area    |  
-| Original Data          | 65.62%    | 0.88       | 84.38%    | 0.87       | 78.12%    | 0.88       | 71.88%    | 0.84       | 75.00%    | 0.85       |
-| 15% of Augmented Data   | 75.00%    | 0.84       | 65.62%    | 0.72       | 78.12%    | 0.88       | 56.25%    | 0.67       | 53.12%    | 0.65       | 
-| 35% of Augmented Data   | 71.88%    | 0.80       | 84.38%    | 0.90       | 84.38%    | 0.90       | 75.00%    | 0.85       | 62.50%    | 0.71       |
-| 50% of Augmented Data   | 81.25%    | 0.85       | 65.62%    | 0.68       | 68.75%    | 0.80       | 56.25%    | 0.57       | 53.12%    | 0.49       |
-| 80% of Augmented Data   | 84.30%    | 0.90       | 75.00%    | 0.83       | 78.12%    | 0.82       | 78.12%    | 0.80       | 43.75%    | 0.45       | 
+| Number of Epochs       | 10 epochs |            | 20 epochs |            | 30 epochs |            | 40 epochs |            | 50 epochs |          |  
+|------------------------|-----------|------------|-----------|------------|-----------|------------|-----------|------------|-----------|------------|
+| Original Data          | 65.62%    | 0.88       | 84.38%    | 0.87       | 78.12%    | 0.88       | 71.88%    | 0.84       | 75        | 0.85       |
+| 15% of Augmented Data   | 75%      | 0.84      | 65.62%      | 0.72       | 78.12%     |0.88       |56.25%      | 0.67      | 53.12%      | 0.65      | 
+| 35% of Augmented Data   | 71.88%      | 0.80       | 84.38     |0.90       | 84.38      |0.90       | 75%      | 0.85       | 62.50%      |0.71      |
+| 50% of Augmented Data   |  81.25%      | 0.85      | 65.62%     | 0.68       | 68.75%   | 0.80      | 56.25%     | 0.57      | 53.12      | 0.49      |
+| 80% of Augmented Data   | 84.30%      | 0.90      | 75%      | 0.83       | 78.12%     | 0.82      | 78.12%      | 0.80      | 43.75%    | 0.45       | 
 
 
 
