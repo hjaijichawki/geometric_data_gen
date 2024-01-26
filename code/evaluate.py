@@ -1,22 +1,38 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve,auc
-
+'''This function is used to plot the training and validation loss
+   :param history: the history of the trained classifier
+   :return: the plot of the training and validation loss'''
 def plot_loss(history):
     history_frame = pd.DataFrame(history.history)
     history_frame.loc[:, ['loss', 'val_loss']].plot()
     plt.title('Training and validation loss')
 
+
+'''This function is used to plot the training and validation accuracy
+   :param history: the history of the trained classifier
+   :return: the plot of the training and validation accuracy'''
 def plot_accurancy(history):
     history_frame = pd.DataFrame(history.history)
     history_frame.loc[:, ['accuracy', 'val_accuracy']].plot()
-    plt.title('Training and validation accurancy')
+    plt.title('Training and validation accuracy')
 
+'''This function is used to plot test accuracy
+   :param model: the model used to classify images
+   :param test_data: the testing data
+   :param test_labels: the testing labels
+   :return: the test accuracy'''
 def test_accuracy(model,test_data, test_labels):
     test_loss, test_accuracy = model.evaluate(test_data, test_labels)
     print(f'Test Accuracy: {test_accuracy * 100:.2f}%')
 
 
+'''This function is used to plot the ROC curve
+   :param model: the model used to classify images
+   :param test_data: the testing data
+   :param test_labels: the testing labels
+   :return: the plot of the ROC curve'''
 def plot_roc_curve(model,test_data, test_labels):
     y_pred = model.predict(test_data)
     fpr, tpr, _ = roc_curve(test_labels, y_pred)
