@@ -1,9 +1,6 @@
 numpy
 pandas
 matplotlib
-sklearn
-os
-zipfile
-shutil
-tensorflow=2.15.0
-cv2=4.8.0
+scikit-learn
+tensorflow==2.15.0
+cv2==4.8.0
