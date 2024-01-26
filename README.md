@@ -36,7 +36,8 @@ You find here the link for the dataset.
 * Download dataset by following the instruction below:
 
     download kaggle's beta API
-    runb the following commands
+  
+    run the following commands
     ```
         install kaggle.json 
         !pip install -q kaggle
