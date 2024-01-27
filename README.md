@@ -40,7 +40,7 @@ You find here the link for the dataset.
 
 * Download the dataset by following the instructions below:
 
-    Dgit ownload kaggle's beta API
+    Download kaggle's beta API
 
     Execute the following commands
     ```
