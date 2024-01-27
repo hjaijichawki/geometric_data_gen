@@ -1,5 +1,7 @@
 *Geometric Transformations for Medical Image Data Augmentation*
+*Geometric Transformations for Medical Image Data Augmentation*
 --------------------------------------
+
 
 **Introduction**
 ------------------------
@@ -13,6 +15,7 @@ Then we try to inject a percentage of generated images in the training dataset a
 
 **Dataset**
 ----------------
+
 
 You find here the link for the dataset.
 [Brain Tumor Detection MRI Dataset](https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri?fbclid=IwAR0vZxyXazz_k64eRmOP7X-ltavMYQl5dS28QSskOXV2mEnMdEXjfhLiCPA)
@@ -33,6 +36,8 @@ You find here the link for the dataset.
 
 **Running Code**
 -------------------
+
+* Download the dataset by following the instructions below:
 
 * Download the dataset by following the instructions below:
 
@@ -66,6 +71,7 @@ You find here the link for the dataset.
 * Run the code in `classifier.py` to classify original data
 
 * Run the code in `Data_augmentation.py` to generate new images
+* Run the code in `Data_augmentation.py` to generate new images
   
 * Load x% of original data and 100-x% of new generated data in the TRAIN_model directory
   
@@ -80,6 +86,7 @@ We measure the test accuracy and the area under the ROC curve in each attempt
 
 | Number of Epochs       | 10 epochs |            | 20 epochs |            | 30 epochs |            | 40 epochs |            | 50 epochs |          |  
 |------------------------|-----------|------------|-----------|------------|-----------|------------|-----------|------------|-----------|------------|
+| Original Data          | 65.62%    | 0.88       | 84.38%    | 0.87       | 78.12%    | 0.88       | 71.88%    | 0.84       | 75%        | 0.85       |
 | Original Data          | 65.62%    | 0.88       | 84.38%    | 0.87       | 78.12%    | 0.88       | 71.88%    | 0.84       | 75%        | 0.85       |
 | 15% of Augmented Data   | 75%      | 0.84      | 65.62%      | 0.72       | 78.12%     |0.88       |56.25%      | 0.67      | 53.12%      | 0.65      | 
 | 35% of Augmented Data   | 71.88%      | 0.80       | 84.38%    |0.90       | 84.38%      |0.90       | 75%      | 0.85       | 62.50%      |0.71      |
