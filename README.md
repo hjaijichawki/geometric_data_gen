@@ -1,11 +1,10 @@
 *Geometric Transformations for Medical Image Data Augmentation*
-*Geometric Transformations for Medical Image Data Augmentation*
 --------------------------------------
-
 
 **Introduction**
 ------------------------
-In the realm of ML, the efficacy of models is related to the quantity and quality of the data used for their training, the more diverse and plentiful the data, the better the models generalize. However, in many cases, there is a scarcity of diverse and comprehensive datasets required for effective model training. In this context, data augmentation emerges as a crucial measure to mitigate the impact of data scarcity by artificially increasing the volume of training data through the application of techniques which generate new data.
+
+In the realm of Machine Learning, the efficacy of models is related to the quantity and quality of the data used for their training, the more diverse and plentiful the data, the better the models generalize. However, in many cases, there is a scarcity of diverse and comprehensive datasets required for effective model training. In this context, data augmentation emerges as a crucial measure to mitigate the impact of data scarcity by artificially increasing the volume of training data through the application of techniques which generate new data.
 This repository focuses on exploring different geometric transformations applied to generate new medical images such as rotation, shear, zoom, horizontal flip, and vertical flip. Two different approaches are employed to train the model with varying the training dataset:
 1. ***Without Data Augmentation:*** The model is trained on the original, unaltered dataset.
 2. ***With Data Augmentation:*** The model is trained on the dataset with new generated images.
@@ -29,6 +28,8 @@ You find here the link for the dataset.
 * ***Data_augmentation.py:*** Contains the code for generating new images from originals.
 
 * ***data_preparation.py:*** Contains the code for data preparation.
+  
+*  **dataset_extract.py:** Contains the code for dataset extraction from a zip file.
 
 * ***evalute.py:*** Contains the code for model evaluation. 
   
@@ -39,9 +40,7 @@ You find here the link for the dataset.
 
 * Download the dataset by following the instructions below:
 
-* Download the dataset by following the instructions below:
-
-    download kaggle's beta API
+    Dgit ownload kaggle's beta API
 
     Execute the following commands
     ```
